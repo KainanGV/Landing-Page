@@ -7,9 +7,10 @@
 
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/font.css">
+    <link rel="stylesheet"  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
     
     <script src="js/jquery.min.js"></script>
-    <script src="js/typed.js"></script>
     
 </head>
 <body>
@@ -31,7 +32,7 @@
         </div>
     
         <nav>
-          <div class="logo">Dev<span>A</span>mitjha</div>
+          <div class="logo">Dev<span>A</span>Kainan</div>
           <div class="mobile_menu">
             <i class="fa fa-bars"></i>
           </div>
@@ -56,8 +57,8 @@
             <i class="fa fa-dribbble"></i>
           </div>
           <h1>I'm a <span id="type_"></span></h1>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla adipisci,
-            <br>quasi fugiat quidem iusto natus.</p>
+          <p>Landing Page para desenvolvedor Front-end, responsivo
+            <br>Prática de técnicas responsivas.</p>
           <div class="btn_group">
             <div class="btn active">My Work</div>
             <div class="btn">Hire me</div>
@@ -66,13 +67,14 @@
       </div>
       <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.9"></script>
       <script>
-        
+        //Instâcnia do Objeto da classe e biblioteca typed, assim manipulamos a animação
         var typed = new Typed("#type_", {
           strings: [
               'Developer.',
-              'Photographer.',
-              'Designer.'
+              'Front-End.',
+              'Back-End.'
           ],
+          // Propriedades da biblioteca Typed do JS, cuja função é dar um efeito de animação quando digiatamos por /////////exemplos
           stringsElement: null,
           typeSpeed: 200,
           startDelay: 600,
@@ -84,6 +86,16 @@
 
         });
         // mobile menu
+          
+
+        $(document).ready(function(){
+          $(".mobile_menu").click(function(){
+            $("nav ul").css("left","0");
+          })
+          $(".close").click(function(){
+            $("nav ul").css("left","-100%");
+          })
+        })
       </script>
 </body>
 </html>
