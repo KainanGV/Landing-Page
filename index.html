@@ -10,6 +10,7 @@
     
     <script src="js/jquery.min.js"></script>
     <script src="js/typed.js"></script>
+    
 </head>
 <body>
     <div class="container">
@@ -48,7 +49,7 @@
         </nav>
         <div class="content_wrapper">
           <div class="social">
-            <i class="fa fa-facebook"></i>
+            <a><i class="fa fa-facebook"></i></a>
             <i class="fa fa-twitter"></i>
             <i class="fa fa-instagram"></i>
             <i class="fa fa-linkedin"></i>
@@ -63,5 +64,26 @@
           </div>
         </div>
       </div>
+      <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.9"></script>
+      <script>
+        
+        var typed = new Typed("#type_", {
+          strings: [
+              'Developer.',
+              'Photographer.',
+              'Designer.'
+          ],
+          stringsElement: null,
+          typeSpeed: 200,
+          startDelay: 600,
+          backSpeed: 100,
+          backDelay: 1000,
+          toop: true,
+          loopCount: 5,
+          cursorChar: "|",
+
+        });
+        // mobile menu
+      </script>
 </body>
 </html>
